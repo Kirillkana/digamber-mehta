@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.75">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sidebar-search.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap" rel="stylesheet">
+  <script src="typewriter.js"></script>
+  <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <title>SoftHub</title>
+</head>
+
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar locked">
+    <div class="logo_items flex">
+      <span class="nav_image">
+        <img src="images/logo.svg" alt="logo_img" />
+      </span>
+      <span class="logo_name">SoftHub</span>
+      <i class="bx bx-lock-alt" id="lock-icon" title="Unlock Sidebar"></i>
+      <i class="bx bx-x" id="sidebar-close"></i>
+    </div>
+
+    <div class="menu_container">
+      <div class="menu_items">
+        <ul class="menu_item">
+          <div class="menu_title flex">
+            <span class="title">Platform</span>
+            <span class="line"></span>
+          </div>
+
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bxl-windows'></i>
+              <span>WINDOWS</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bxl-android'></i>
+              <span>ANDROID</span>
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bxl-apple'></i>
+              <span>APPLE</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu_item">
+          <div class="menu_title flex">
+            <span class="title">APPLICATIONS</span>
+            <span class="line"></span>
+          </div>
+
+
+          <!-- Example of adding a sub-menu indicator and the sub-menu under the APPLICATIONS menu -->
+<li class="item">
+  <a href="#" class="link flex">
+    <i class='bx bxs-game'></i>
+    <span>GAMES</span>
+    <i class='bx bx-chevron-down arrow-icon'></i> <!-- Down arrow indicator -->
+  </a>
+  <!-- Sub-menu -->
+  <ul class="submenu">
+    <li class="sub-item">
+      <a href="#" class="sub-link">Sub-Game 1</a>
+    </li>
+    <li class="sub-item">
+      <a href="#" class="sub-link">Sub-Game 2</a>
+    </li>
+    <!-- Add more sub-items as needed -->
+  </ul>
+</li>
+
+
+
+
+
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bx-window'></i>
+              <span>BROWSER</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bx-shield'></i>
+              <span>VPN</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bx-cog'></i>
+              <span>UTILITIES & TOOLS</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bx-video'></i>
+              <span>VIDEO PLAYER</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bx-music' ></i>
+              <span>AUDIO PLAYER</span>
+            </a>
+            
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bxs-chat'></i>
+              <span>COMMUNICATION</span>
+            </a>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bxs-shield-plus'></i>
+              <span>ANTI VIRUS</span>
+            </a>
+          </li>
+          </li>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class='bx bxl-chrome' ></i>
+              <span>CHROME EXTENSION</span>
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu_item">
+          <div class="menu_title flex">
+            <span class="title">Setting</span>
+            <span class="line"></span>
+          </div>
+          <li class="item">
+            <a href="#" class="link flex">
+              <i class="bx bx-cog"></i>
+              <span>Setting</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar_profile flex">
+        <span class="nav_image">
+          <img src="images/profile.jpg" alt="logo_img" />
+        </span>
+        <div class="data_text">
+          <span class="name">DIGAMEBR</span>
+          <span class="email">DIGAMBER@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Navbar Search -->
+  <!-- <nav class="search-navbar flex">
+    <i class="bx bx-menu" id="sidebar-open"></i>
+    <input type="text" placeholder="Search..." class="search_box" />
+    <span class="nav_image">
+      <img src="images/profile.jpg" alt="logo_img" />
+    </span>
+  </nav> -->
+
+  <div id="bodyy">
+
+    <nav class="navbar">
+      <div class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="logo">
+
+      </div>
+      <!-- <div class="logo">
+            <img src="/images/logo.svg" alt="logo" class="logo-img" height="65" width="70">
+            
+        </div> -->
+
+
+
+
+      <ul class="nav-list">
+        <li><a href=""><img src="images/windows.svg" alt="windows" height="55" width="55"></a></li>
+        <li><a href=""><img src="images/MacOS.svg" alt="MacOS" height="55" width="55"></a></li>
+        <li><a href=""><img src="images/android.svg" alt="Android" height="55" width="55"></a></li>
+      </ul>
+      <a href="/signin/signuplogin-main/index.html" target="_blank" class="">
+        <button class="signin-button">Sign In</button>
+      </a>
+    </nav>
+
+
+    <div class="banner">
+
+
+      <h2>
+        <div class="static">ULTIMATE HUB FOR </div>
+      </h2>
+      <h2><span class="dynamic-txt"></span></h2><br>
+      <h2>
+        <div class="static">AT ONE PLACE.</div>
+      </h2>
+
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".dynamic-txt", {
+          strings: ['Games', 'Mods', 'Apks', 'Software'],
+          typeSpeed: 200,
+          backSpeed: 180,
+          loop: true
+        })
+      </script>
+
+
+
+
+
+      <div class="search">
+
+        <input type="text" name="Search" placeholder="Search" id="Search">
+
+        <button class="btn btn-sm">Search</button>
+      </div>
+    </div>
+
+
+    <div class="Container">
+
+      <h1 class="heading">TOP DOWNLOADS ></h1>
+
+      <div class="download-list">
+        <a href="https://apps.microsoft.com/detail/9WZDNCRFJ2WL?hl=en-US&gl=US" class="app" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/04/Facebook_f_logo_%282021%29.svg" alt="Facebook">
+          <p class="name" style="text-align: center;">Facebook</p>
+        </a>
+        <a href="https://apps.microsoft.com/detail/9NKSQGP7F2NH?hl=en-us&gl=US" class="app" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp">
+          <p class="name" style="text-align: center;">Whatsapp</p>
+        </a>
+        <a href="#" class="app">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="Youtube"
+            target="_blank">
+          <p class="name" style="text-align: center;">Youtube</p>
+        </a>
+        <a href="https://code.visualstudio.com/download" class="app" target="_blank"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/113px-Visual_Studio_Code_1.35_icon.svg.png"
+            alt="VS code">
+          <p class="name" style="text-align: center;">VS Code</p>
+        </a>
+        <a href="https://www.videolan.org/vlc/download-windows.html" class="app" target="_blank"><img
+            src="https://cdn.pixabay.com/photo/2013/07/12/13/58/cone-147672_1280.png" alt="Vlc">
+          <p class="name" style="text-align: center;">VLC</p>
+        </a>
+        <a href="https://apps.microsoft.com/detail/9NCBCSZSJRSB?hl=en-us&gl=US" class="app" target="_blank"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify">
+          <p class="name" style="text-align: center;">Spotify</p>
+        </a>
+
+        <a href="https://apps.microsoft.com/detail/9WZDNCRFJ3TJ?hl=en-us&gl=US" class="app" target="_blank"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix">
+          <p class="name" style="text-align: center;">Netflix</p>
+        </a>
+        <a href="https://www.google.com/chrome/?brand=CHBD&brand=JJTC&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuRAtfQNgXIYbur6DXO5eJ6TqwUqFG-a9CDYnzDumIJRAjdnj_qMZBYaAm1jEALw_wcB&gclsrc=aw.ds"
+          class="app" target="_blank"><img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg"
+            alt="chrome">
+          <p class="name" style="text-align: center;">Chrome</p>
+        </a>
+        <a href="https://get.adobe.com/reader/" class="app" target="_blank"><img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg" alt="">
+          <p class="name">Adobe</p>
+        </a>
+        <a href="https://www.canva.com/en_in/download/windows/" class="app" target="_blank"><img
+            src="https://static.canva.com/web/images/12487a1e0770d29351bd4ce4f87ec8fe.svg" alt="Canva">
+          <p class="name" style="text-align: center;">Canva</p>
+        </a>
+        <a href="https://discord.com/download" class="app" target="_blank"><img
+            src="https://media.licdn.com/dms/image/C560BAQF4M0IT6_BcsA/company-logo_200_200/0/1630641421267/discord_logo?e=1712188800&v=beta&t=yIcT4hOjaF04OX9yA1v6oFsmu235lOzY88rPdFI8Ge4"
+            alt="Discord">
+          <p class="name" style="text-align: center;">Discord</p>
+        </a>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="Windows">
+        <h2>Windows</h2>
+      </div>
+      <div class="download-list">
+        <a href="https://www.win-rar.com/download.html?&L=0" class="app"><img src="images/winrar.svg" alt="win-rar">
+          <p class="name" style="text-align: center;">winrar</p>
+        </a>
+        <a href="https://www.microsoft.com/en-in/microsoft-365/business/compare-all-microsoft-365-business-products-b?ef_id=_k_Cj0KCQiAhc-sBhCEARIsAOVwHuRNUWd6v22xD6vFbbJ2V8is1o0b4NX_SwSjYhO3g3dG-VcVEiq_8U4aAuCLEALw_wcB_k_&OCID=AIDcmmg9qnxz0z_SEM__k_Cj0KCQiAhc-sBhCEARIsAOVwHuRNUWd6v22xD6vFbbJ2V8is1o0b4NX_SwSjYhO3g3dG-VcVEiq_8U4aAuCLEALw_wcB_k_&gad_source=1&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuRNUWd6v22xD6vFbbJ2V8is1o0b4NX_SwSjYhO3g3dG-VcVEiq_8U4aAuCLEALw_wcB"
+          class="app"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+          <p class="name" style="text-align: center;">Microsoft</p>
+        </a>
+        <a href="https://www.ccleaner.com/ccleaner/download/standard" class="app"><img src="images/ccleaner.svg"
+            alt="">
+          <p class="name">&nbsp;&nbsp;ccleaner</p>
+          <a href="https://apps.microsoft.com/detail/9NKSQGP7F2NH?hl=en-us&gl=US" class="app" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Whatsapp">
+            <p class="name" style="text-align: center;">Whatsapp</p>
+          </a>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;">images</p>
+        </a>
+        <a href="https://www.videolan.org/vlc/download-windows.html" class="app" target="_blank"><img
+            src="https://cdn.pixabay.com/photo/2013/07/12/13/58/cone-147672_1280.png" alt="Vlc">
+          <p class="name">VLC</p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;">images</p>
+        </a>
+        <a href="https://www.google.com/chrome/?brand=CHBD&brand=JJTC&gclid=Cj0KCQiAhc-sBhCEARIsAOVwHuRAtfQNgXIYbur6DXO5eJ6TqwUqFG-a9CDYnzDumIJRAjdnj_qMZBYaAm1jEALw_wcB&gclsrc=aw.ds"
+          class="app" target="_blank"><img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg"
+            alt="chrome">
+          <p class="name" style="text-align: center;">Chrome</p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;">images</p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;">images</p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;">images</p>
+        </a>
+
+      </div>
+
+
+      <div class="Android">
+        <h2>Android</h2>
+      </div>
+      <div class="download-list">
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+        <a href="" class="app"><img src="" alt="">
+          <p class="name" style="text-align: center;"></p>
+        </a>
+
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="foot">
+        <div class="row">
+          <div class="footer-col">
+            <h4>About us</h4>
+            <ul>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">Publish your app</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get Help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Legal information</a></li>
+              <li><a href="#">DMCA</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="                   "><i class="fab fa-facebook-f"></i></a>
+              <a href="                   "><i class="fab fa-twitter"></i></a>
+              <a href="                   "><i class="fab fa-instagram"></i></a>
+              <a href="                   "><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/sidebar-script.js"></script>
+</body>
+
+</html>

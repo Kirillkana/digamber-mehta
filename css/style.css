@@ -1,0 +1,784 @@
+/* General styles (unchanged) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+#bodyy {
+    padding-left: 280px;
+    padding-right: 10px;
+    /* display: grid; */
+    /* justify-content: center; */
+    background-color: white;
+    transition: .5s ease padding;
+}
+
+#bodyy.wide{
+    padding-left: 90px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+    /* padding-top: 85px; */
+}
+
+.logo {
+    /* border: 3px solid white; */
+    /* border-radius: 15px; */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+}
+
+
+
+.logo-img {
+    margin-right: 20px;
+}
+
+/* .logo-text {
+    font-family: 'Signika Negative';
+    font-size: 48px;
+    font-weight: bold;
+    color: #000;
+    padding-top: 8px;
+    margin-right: 15px
+}
+
+
+
+
+.logo-text:hover {
+    color: #3498db;
+    transform: scale(1.1); 
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden;
+} */
+
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin-right: 10px;
+    padding: 2px 28px;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    padding-left: px;
+}
+
+.nav-list a:hover img,
+.logo:hover img {
+    transform: scale(1.2);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+
+
+
+.btn {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 9px;
+    background-color: lightgray;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: aqua;
+
+    color: white;
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+.signin-button {
+    background-color: aqua;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.signin-button:hover {
+    background-color: aqua;
+    color: white;
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden;
+
+}
+
+
+
+/* shawdow effect */
+.navbar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* Adjust this value for the shadow distance */
+    width: 100%;
+    height: 3px;
+    background: rgba(111, 110, 110, 0.2);
+    /* Shadow color and opacity */
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(40, 32, 32, 0.2);
+    /* Adjust the shadow properties as needed */
+}
+
+
+/* banner */
+
+/* Default styles for banner */
+.banner {
+    margin-top: 15px;
+    height: 52vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/banner.svg);
+    border: 2px solid white;
+    border-radius: 30px;
+    opacity: 0.9;
+}
+
+.static {
+    padding-bottom: 10px;
+    font-family: 'Signika Negative', sans-serif;
+    /* font-weight: 900; */
+    font-size: 50px;
+    color: rgb(0, 98, 255)
+}
+
+.dynamic-txt {
+    padding-bottom: 10px;
+    font-family: 'Signika Negative', sans-serif;
+    /* font-weight: 500; */
+    font-size: 50px;
+    color: rgb(0, 98, 255)
+
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+#Search {
+    padding: 10px;
+    font-size: 18px;
+    border: px solid grey;
+    border-radius: 15px;
+    margin-right: 15px;
+    width: 800px;
+    height: 60px;
+}
+
+
+.btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+    height: 60px;
+    width: 130px;
+}
+
+
+.heading {
+    text-decoration: none;
+    font-size: x-large;
+    padding: 23px;
+    display: inline-block;
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: solid;
+    /* Use a linear gradient for the border */
+    border-image: linear-gradient(45deg, #7fffd4, #ff6ec7) 1;
+    margin-top: 30px;
+
+}
+
+.heading:hover {
+    color: white;
+    /* Make the text transparent */
+    background-image: linear-gradient(45deg, #7fffd4, #ff6ec7);
+    /* Apply the same gradient as border */
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    /* Matching border radius on hover */
+    background-clip: padding-box;
+    /* Ensure background takes border-radius into account */
+
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.Windows {
+    text-decoration: none;
+    font-size: x-large;
+    padding: 18px;
+    padding-right: 100px;
+    display: inline-block;
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: solid;
+    /* Use a linear gradient for the border */
+    border-image: linear-gradient(45deg, #7fffd4, #ff6ec7) 1;
+    /* Adjust the colors 'aqua' and 'neon' to your preferred colors */
+}
+
+.Windows:hover {
+    color: white;
+    /* Make the text transparent */
+    background-image: linear-gradient(45deg, #7fffd4, #ff6ec7);
+    /* Apply the same gradient as border */
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    /* Matching border radius on hover */
+    background-clip: padding-box;
+    /* Ensure background takes border-radius into account */
+
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+.Android {
+    text-decoration: none;
+    font-size: x-large;
+    padding: 18px;
+    padding-right: 92px;
+    display: inline-block;
+    border-radius: 15px;
+    border-width: 4px;
+    border-style: solid;
+    /* Use a linear gradient for the border */
+    border-image: linear-gradient(45deg, #7fffd4, #ff6ec7) 1;
+    /* Adjust the colors 'aqua' and 'neon' to your preferred colors */
+}
+
+.Android:hover {
+    color: white;
+    /* Make the text transparent */
+    background-image: linear-gradient(45deg, #7fffd4, #ff6ec7);
+    /* Apply the same gradient as border */
+    transform: scale(1.05);
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    /* Matching border radius on hover */
+    background-clip: padding-box;
+    /* Ensure background takes border-radius into account */
+
+}
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+/* main content */
+
+.Container {
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    text-align: left;
+
+}
+
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column-gap: 50px;
+    text-align: center;
+    position: relative;
+    left: 0;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.download-list a{
+    width: 120px;
+    margin-bottom: 40px;
+}
+
+.app {
+    text-align: center;
+    text-decoration: none;
+}
+
+.app:last-child {
+    margin-right: 0;
+}
+
+.app img {
+    width: 88px;
+    height: 116px;
+    object-fit: contain;
+    display: inline-block;
+    padding-top: 18px;
+    border: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.app img:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.app p {
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+    font-size: 23px;
+}
+
+.app p:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+
+
+
+
+
+.footer {
+    background-color: white;
+    padding: 70px 0;
+    position: relative;
+
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    /* Adjust this value for the shadow distance */
+    width: 100%;
+    height: 3px;
+    background: rgba(111, 110, 110, 0.2);
+    /* Shadow color and opacity */
+    z-index: -1;
+    box-shadow: 0 0 10px rgba(40, 32, 32, 0.5);
+    /* Adjust the shadow properties as needed */
+
+}
+
+.foot {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #0f0e0e;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #121111;
+    text-decoration: none;
+    font-weight: 300;
+    color: #151313;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #111010;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #0c0b0b;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #113184;
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.burger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1300px) {
+    .search {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .nav-list img {
+        
+   
+      height: 30px;
+      width: 30px;
+    
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .nav-list{
+        display: none;
+    }
+
+  }
+  
+
+@media screen and (max-width: 1000px) {
+    .download-list{
+        grid-column-gap: 70px;
+    }
+
+    .app p{
+        font-size: 18px;
+    }
+
+    /* .nav-list img {
+        height: 30;
+        width: 30;
+        
+    }  */
+
+
+    .logo-text {
+        font-size: 36px;
+    }
+
+    .signin-button {
+        padding: 6px 12px;
+    }
+
+    .static, .dynamic-txt{
+        font-size: 35px;
+    }
+
+}
+
+
+@media screen and (max-width: 991px){
+    #bodyy{
+        padding-left: 82px;
+        padding-right: 0;
+        padding-top: 65px;
+    }
+
+    .navbar{
+        position: fixed;
+        width: calc(100% - 81px);
+        right: 0;
+        margin-left: auto;
+        top: 0;
+        z-index: 6;
+        background-color: #FFFFFF;
+    }
+
+    .navbar::after{
+        bottom: -5px;
+    }
+
+    .signin-button{
+        font-size: 17px;
+    }
+
+    .footer{
+        padding-bottom: 20px;
+    }
+
+    .burger-menu.opened span:not(:last-child){
+        margin-bottom: 2px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .download-list {
+        display: flex;
+        flex-wrap: wrap;
+       /* justify-content: space-evenly; */
+        grid-column-gap: 25px;
+        text-align: center;
+        position: relative;
+        left: 5px;
+    }
+
+    .download-list a{
+        width: 20%;
+    }
+
+    .app img {
+        width: 62px;
+        height: 65px;
+        object-fit: contain;
+    }
+
+    .app {
+        text-align: center;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
+    
+    .app p {
+        margin: 0;
+        font-weight: bold;
+        padding-top: 16px;
+        font-size: 14px;
+    }
+    
+}
+
+
+@media (max-width: 880px) {
+    .banner {
+        display: flex;
+        height: 40vh;
+        border-radius: 20px;
+        
+    }
+
+    #Search {
+        width: 100%;
+        max-width: 71%;
+        margin-right: 15px;
+        height: 40px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+    .burger-menu{
+        display: block;
+    }
+
+    .burger-menu span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #121111;
+        transition: .3s ease margin;
+    }
+
+    .burger-menu span:not(:last-child){
+        margin-bottom: 6px;
+    }
+
+    .navbar{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .search{
+       width: 90%;
+       margin-left: 36px;
+    }
+
+    .btn {
+        z-index: 999999;
+        padding: 8px 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 15px;
+        background-color: aqua;
+        color: black;
+        cursor: pointer;
+        height: 44px;
+        width: 130px;
+    }
+
+    .static {
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .dynamic-txt {
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .banner {
+        height: 33vh;
+    }
+}
+
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: aqua;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 420px) {
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    grid-column-gap: 24px;
+    text-align: center;
+    position: relative;
+    left: 5px;
+}}
+@media screen and (max-width: 400px) {
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    grid-column-gap: 22px;
+    text-align: center;
+    position: relative;
+    left: 5px;
+}
+}
+@media screen and (max-width: 375px) {
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    grid-column-gap: 20px;
+    text-align: center;
+    position: relative;
+    left: 5px;
+}
+}
+@media screen and (max-width: 350px) {
+.download-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    grid-column-gap: 19px;
+    text-align: center;
+    position: relative;
+    left: 5px;
+}
+}
