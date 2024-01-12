@@ -90,7 +90,9 @@ function handleResize() {
   }
 }
 
-window.addEventListener('resize', handleResize);
+if (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+  window.addEventListener('resize', handleResize);
+}
 handleResize();
 
 
